@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Inicio">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end|bottom"-->
+<!--        android:backgroundTint="@color/ColorAjeo"-->
+<!--        android:contentDescription="TODO"-->
+<!--        android:src="@drawable/ic_round_add_24"-->
+<!--        app:backgroundTint="@color/teal_200"-->
+<!--        app:layout_anchor="@+id/bottom_app_bar"-->
+<!--        app:layout_anchorGravity="top|center"-->
+<!--        app:maxImageSize="40dp" />-->
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/bottom_app_bar"-->
+<!--        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:fabAlignmentMode="center"-->
+<!--        app:fabCradleMargin="6dp"-->
+<!--        app:fabCradleRoundedCornerRadius="60dp"-->
+<!--        tools:ignore="BottomAppBar">-->
+
+
+<!--                <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--                    android:id="@+id/chip_bar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    app:cnb_menuResource="@menu/nav_menu"-->
+<!--                    app:cnb_iconSize="30dp"-->
+<!--                    app:cnb_radius="28dp"-->
+<!--                    android:paddingBottom="8dp"-->
+<!--                    android:paddingTop="8dp"-->
+<!--                    android:layout_marginEnd="0dp"-->
+<!--                    android:layout_marginStart="0dp"-->
+
+
+        <!--            />-->
+
+        <!--        <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:paddingTop="8dp"-->
+        <!--            android:paddingBottom="8dp"-->
+        <!--            app:cnb_menuResource="@menu/nav_menu"-->
+        <!--            app:cnb_iconSize="30dp"-->
+
+        <!--            />-->
+
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="113dp" />-->
+
+
+
+
+<!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+
+            android:id="@+id/meowBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+
+
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mbn_backgroundBottomColor="@color/ColorAjeo"
+            app:mbn_circleColor="@color/ColorAjeo"
+            app:mbn_countBackgroundColor="@color/teal_200"
+            app:mbn_countTextColor="@color/purple_500"
+            app:mbn_defaultIconColor="@color/white"
+            app:mbn_selectedIconColor="@color/black"
+            app:mbn_shadowColor="@color/black" />
+
+        <!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+
+        <!--    <meow.bottomnavigation.MeowBottomNavigation-->
+<!--        android:id="@+id/meowBottomNavigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        app:mbn_shadowColor="@color/black"-->
+<!--        app:mbn_backgroundBottomColor="@color/ColorAjeo"-->
+<!--        app:mbn_circleColor="@color/purple_700"-->
+<!--        app:mbn_countBackgroundColor="@color/teal_200"-->
+<!--        app:mbn_countTextColor="@color/purple_500"-->
+<!--        app:mbn_defaultIconColor="@color/black"-->
+<!--        app:mbn_selectedIconColor="@color/teal_200"/>-->
+
+
+
+
+
+<!--    <com.etebarian.meowbottomnavigation.MeowBottomNavigation-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:mbn_circleColor="#ffffff"-->
+<!--        app:mbn_backgroundBottomColor="#ffffff"-->
+<!--        app:mbn_countBackgroundColor="#ff6f00"-->
+<!--        app:mbn_countTextColor="#ffffff"-->
+<!--        app:mbn_countTypeface="fonts/SourceSansPro-Regular.ttf"-->
+<!--        app:mbn_defaultIconColor="#90a4ae"-->
+<!--        app:mbn_rippleColor="#2f424242"-->
+<!--        app:mbn_selectedIconColor="#3c415e"-->
+<!--        app:mbn_shadowColor="#1f212121"-->
+<!--        app:mbn_hasAnimation="true"-->
+<!--        />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

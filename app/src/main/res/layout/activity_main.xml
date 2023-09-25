@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.core.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.25"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanistextrabold"
+            android:text="AJEO"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+
+
+            android:textSize="70dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/edits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrar"
+            android:layout_width="277dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/urbanistmedium"
+            android:text="Registrarse"
+            android:textSize="16sp"
+
+            app:cornerRadius="30dp"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvYatienecuenta" />
+
+        <TextView
+            android:id="@+id/tvcrearunacuenta"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+
+
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/urbanistmedium"
+            android:text="@string/crear_una_cuenta"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/edits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcrearunacuenta"
+
+            >
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutNombre"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="@string/nombre"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:startIconDrawable="@drawable/ic_gmail">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextNombre"
+                    counterMaxLength="50"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistbold"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContraseña" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutCorreo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="@string/correo_electronico"
+                android:layout_below="@+id/TextInputLayoutNombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:startIconDrawable="@drawable/ic_gmail">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextCorreo"
+                    counterMaxLength="50"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistbold"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContraseña" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutContraseña"
+                android:layout_below="@+id/TextInputLayoutCorreo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="@string/contrase_a"
+                app:passwordToggleEnabled="true"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutCorreo"
+                app:layout_constraintVertical_bias="0.053"
+
+                app:startIconDrawable="@drawable/ic_candado">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextContraseña"
+                    counterMaxLength="40"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:maxLength="20"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContraseña" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutNumero"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextInputLayoutContraseña"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="@string/numero"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutCorreo"
+                app:layout_constraintVertical_bias="0.053"
+                app:startIconDrawable="@drawable/ic_candado">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextNumero"
+                    counterMaxLength="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistbold"
+
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContraseña" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvYatienecuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/urbanistregular"
+
+
+            android:text="Ya tienes cuenta?"
+            android:textAlignment="center"
+            android:textSize="18dp"
+
+            android:textColor="@color/ColorAjeo"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edits" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

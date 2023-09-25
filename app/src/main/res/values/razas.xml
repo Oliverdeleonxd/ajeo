@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="Razas">EspinerRazas</string>
+    <string-array name="Razas">
+
+        <item>Afrikander</item>
+        <item>Angus Negro</item>
+        <item>Angus Rojo</item>
+        <item>Barzona</item>
+        <item>Boran</item>
+        <item>Braford</item>
+        <item>Brahman</item>
+        <item>Brangus</item>
+        <item>Braunvieh</item>
+        <item>Charolais</item>
+        <item>Chianina</item>
+        <item>Gelbvieh</item>
+        <item>Guernsey</item>
+        <item>Guzera</item>
+        <item>Hereford</item>
+        <item>Holstein</item>
+        <item>Jersey</item>
+        <item>Limousin</item>
+        <item>Marchigiana</item>
+        <item>Nerole</item>
+        <item>Normanda</item>
+        <item>Pardo Suiza</item>
+        <item>Red Poll</item>
+        <item>Santa Gertrudis</item>
+        <item>Senepol</item>
+        <item>Shorthorn</item>
+        <item>Simmental</item>
+        <item>South Devon</item>
+        <item>Tabapua</item>
+        <item>Tuli</item>
+        <item>Wagyu</item>
+
+
+
+    </string-array>
+    
+</resources>

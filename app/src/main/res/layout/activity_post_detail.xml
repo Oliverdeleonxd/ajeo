@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/ColorAjeo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Detalles" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerViewImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/ic_round_photo_camera_back_24"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l1">
+
+                <TextView
+
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardImg"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="3"
+                    android:singleLine="true"
+                    android:text="Hola mundo"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l2">
+
+                <TextView
+                    android:id="@+id/tv_Bl_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Bl/. "
+                    android:textColor="@color/ColorAjeo"
+                    android:textSize="20dp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_precio_row"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/tv_Bl_row"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+
+                    android:singleLine="true"
+                    android:text="1 000 000 000"
+                    android:textColor="@color/ColorAjeo"
+                    android:textSize="20dp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_precio_row"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/raza"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Raza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_precio_row"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_R"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Brhaman"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_P"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_R"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/peso"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Peso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_R"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_P"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_R"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_Peso"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="lb"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/l4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:minHeight="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l3">
+
+                <TextView
+                    android:id="@+id/tv_descp_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/descripcion"
+                    android:textColor="#777777"
+                    android:textSize="20dp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_descp_row"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/urbanistbold"
+                    android:maxLines="40"
+
+                    android:text="1. ¿Por qué llora un libro de matemáticas?
+¡Porque tiene muchos problemas!
+2. ¿Qué está al final de todo?
+¡La letra o!
+3. ¿Por qué el profe de música tiene una escalera?
+¡Para poder llegar a las notas más altas!
+1. ¿Por qué llora un libro de matemáticas?
+¡Porque tiene muchos problemas!
+2. ¿Qué está al final de todo?
+¡La letra o!
+3. ¿Por qué el profe de música tiene una escalera?
+¡Para poder llegar a las notas más altas!
+
+1. ¿Por qué llora un libro de matemáticas?
+¡Porque tiene muchos problemas!
+2. ¿Qué está al final de todo?
+¡La letra o!
+3. ¿Por qué el profe de música tiene una escalera?
+¡Para poder llegar a las notas más altas!
+1. ¿Por qué llora un libro de matemáticas?
+¡Porque tiene muchos problemas!
+2. ¿Qué está al final de todo?
+¡La letra o!
+3. ¿Por qué el profe de música tiene una escalera?
+¡Para poder llegar a las notas más altas!
+
+1. ¿Por qué llora un libro de matemáticas?
+¡Porque tiene muchos problemas!
+2. ¿Qué está al final de todo?
+¡La letra o!
+3. ¿Por qué el profe de música tiene una escalera?
+¡Para poder llegar a las notas más altas!
+"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l4">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="409dp"
+                    android:layout_height="5dp"
+                    android:background="@color/ColorAjeo"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="612dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:minHeight="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <TextView
+
+                        android:id="@+id/tv_fecha"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/fecha"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/guideline3"
+                        app:layout_constraintTop_toTopOf="parent"
+
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tvRaza2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/raza"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/guideline3"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_fecha"
+
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tvpPrecio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/precio"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/guideline3"
+                        app:layout_constraintTop_toBottomOf="@+id/tvRaza2"
+
+
+                        />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="185dp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+
+                        android:id="@+id/tv_dfecha"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="10/10/1000"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toRightOf="@id/guideline3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tv_dRaza"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Brhaman"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toRightOf="@id/guideline3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_dfecha"
+
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tv_dPrecio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="1000"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+
+                        app:layout_constraintLeft_toRightOf="@id/guideline3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_dRaza"
+
+
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l6">
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="409dp"
+                    android:layout_height="5dp"
+                    android:background="@color/ColorAjeo"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="612dp" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_margin="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="20dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l7"
+
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/l8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="10dp"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cardViewDetallesVendedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+
+                        <TextView
+
+
+                            android:id="@+id/tv_dven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/urbanistbold"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@string/detalles_del_vendedor"
+                            android:textColor="#777777"
+                            android:textSize="20dp"
+
+                            app:layout_constraintLeft_toLeftOf="@+id/cardViewDetallesVendedor"
+                            app:layout_constraintTop_toTopOf="@+id/cardViewDetallesVendedor"
+
+
+                            />
+
+                        <TextView
+
+                            android:id="@+id/tv_Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/urbanistbold"
+                            android:maxLines="2"
+                            android:singleLine="true"
+                            android:text="Nombre"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/cardViewDetallesVendedor"
+                            app:layout_constraintLeft_toLeftOf="@+id/cardViewDetallesVendedor"
+                            app:layout_constraintRight_toLeftOf="@id/guideline4"
+
+
+                            app:layout_constraintTop_toBottomOf="@+id/tv_dven" />
+
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toStartOf="@+id/cardViewImgVendedor"
+                            app:layout_constraintRight_toLeftOf="@+id/tv_dven" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewImgVendedor"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="250dp"
+                            app:cardElevation="5dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/cardViewDetallesVendedor"
+
+                            app:layout_constraintRight_toRightOf="@+id/cardViewDetallesVendedor"
+                            app:layout_constraintTop_toBottomOf="@id/tv_dven">
+
+                            <ImageView
+
+                                android:id="@+id/imgVendedor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:scaleType="centerCrop"
+
+                                android:fontFamily="@font/urbanistbold"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Nombre"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+
+
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

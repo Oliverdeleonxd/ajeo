@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "925444833517",
+    "project_id": "ajeoapp-89767",
+    "storage_bucket": "ajeoapp-89767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925444833517:android:cbea41ad24fd84dd4c8ce4",
+        "android_client_info": {
+          "package_name": "com.example.ajeo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925444833517-4nv0si1qijulfbv6mhp41pets0891218.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajeo",
+            "certificate_hash": "a5e6115d56eda8ac84a1ed14bf6ef641c1d550ce"
+          }
+        },
+        {
+          "client_id": "925444833517-r6jrg92sbmkuqpmccoki7dsfn5n9bfbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-HYf50wl6QKNDKylsobo5dgktqTMJ874"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925444833517-r6jrg92sbmkuqpmccoki7dsfn5n9bfbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

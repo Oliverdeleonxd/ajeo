@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itInicio"
+        android:title="Inicio"
+        android:icon="@drawable/ic_house"
+
+        />
+    <item android:id="@+id/itSubasta"
+        android:title="Subasta"
+        android:icon="@drawable/ic_bag"
+
+        />
+    <item android:id="@+id/itAdd"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item android:id="@+id/itAdd2"
+        android:title=""
+        android:enabled="false"
+
+
+        />
+    <item android:id="@+id/itFav"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_favorite"
+
+        />
+    <item android:id="@+id/itPerfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_person"
+
+        />
+
+
+</menu>

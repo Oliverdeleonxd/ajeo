@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/urbanistextrabold"
+        android:text="AJEO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextInputLayoutCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutCorreo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/urbanistbold"
+
+        android:hint="Correo electrónico"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIniciarSesion"
+        app:layout_constraintVertical_bias="0.15"
+        app:startIconDrawable="@drawable/ic_gmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditTextCorreo"
+            counterMaxLength="50"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:maxLength="40"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanistbold"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutContraseña" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/google"-->
+<!--        android:layout_width="98dp"-->
+<!--        android:layout_height="41dp"-->
+
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:src="@drawable/logingoogle"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tvNotienecuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+
+
+        android:fontFamily="@font/urbanistmedium"
+        android:text="Aun no tienes cuenta? Registrate aqui"
+
+        android:textAlignment="center"
+        android:textColor="@color/ColorAjeo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvcontinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/tv_OlvidarContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+
+        android:layout_marginTop="80dp"
+
+        android:fontFamily="@font/urbanistmedium"
+        android:text="Olvidaste tu contraseña?"
+        android:textAlignment="center"
+
+
+        android:textColor="@color/ColorAjeo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutCorreo"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/tvcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/urbanistmedium"
+
+
+        android:text="O continue con"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/btngoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNotienecuenta" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btngoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNotienecuenta"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Iniciar Sesion"
+        android:textSize="15dp"
+
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNotienecuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_OlvidarContraseña" />
+
+    <TextView
+        android:id="@+id/tvIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+
+
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/urbanistmedium"
+        android:text="Acceder con tu cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutContraseña"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/urbanistbold"
+        android:hint="Contraseña"
+
+         app:passwordToggleEnabled="true"
+
+
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_OlvidarContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutCorreo"
+        app:startIconDrawable="@drawable/ic_candado">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditTextContraseña"
+            counterMaxLength="40"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+
+
+            android:maxLength="20"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanistbold"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="tvIniciarSesion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
