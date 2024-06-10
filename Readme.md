@@ -18,5 +18,10 @@ _______________________________________
 ![Interfaz de AJEO](Captura.PNG)
 
 
+### Colaboradores 
++ Elian Alonso
++ Julio Terrientes
++ Oliver De León
+
 
 
